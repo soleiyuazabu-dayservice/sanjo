@@ -1,0 +1,627 @@
+css
+/* ===================================
+   ケアセンターソレイユあざぶ style.css
+=================================== */
+
+/* リセット */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Hiragino Sans","Yu Gothic","Meiryo",sans-serif;
+    background:#f8f8f8;
+    color:#333;
+    line-height:1.8;
+}
+
+/* ==========================
+   ヘッダー
+========================== */
+
+header{
+    background:#ffe8dc;
+    color:#92cb97;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav li{
+    margin-left:25px;
+}
+
+nav a{
+    color:#92cb97;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFE082;
+}
+
+/* ==========================
+   メイン画像
+========================== */
+
+.hero{
+    position:relative;
+}
+
+.hero img{
+    width:100%;
+    Height:500px;
+    object-fit:cover;
+    display:block;
+}
+
+.hero-text{
+    position:absolute;
+    top:50%;
+    left:10%;
+    transform:translateY(-50%);
+    background:rgba(255,255,255,.85);
+    padding:40px;
+    border-radius:15px;
+}
+
+.hero-text h1{
+    font-size:42px;
+    color:#2E7D32;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+.hero-text p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+/* ボタン */
+
+.button{
+    display:inline-block;
+    background:#4CAF50;
+    color:#fff;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#388E3C;
+}
+#heroImage{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: opacity 1.5s ease;
+}
+
+/* ==========================
+   共通セクション
+========================== */
+
+section{
+    width:90%;
+    max-width:1100px;
+    margin:70px auto;
+}
+
+section h2{
+    color:#2E7D32;
+    font-size:34px;
+    margin-bottom:25px;
+    text-align:center;
+}
+/*==========================
+私たちの想い
+==========================*/
+
+.concept{
+    background:#f5fbf5;
+    padding:60px 40px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.concept h2{
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.concept p{
+    max-width:800px;
+    margin:20px auto;
+    font-size:18px;
+    line-height:2;
+}
+/*==========================
+施設紹介
+==========================*/
+
+.facility2{
+    text-align:center;
+    padding:60px 40px;
+}
+
+.facility2 h2{
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.facility2 p{
+    max-width:850px;
+    margin:20px auto;
+    font-size:18px;
+    line-height:2;
+}
+
+/* ==========================
+   ギャラリー
+========================== */
+
+.gallery-box{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.gallery-box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+/* ==========================
+   一日の流れ
+========================== */
+
+.schedule ul{
+    list-style:none;
+    max-width:700px;
+    margin:auto;
+}
+
+.schedule li{
+    background:#fff;
+    padding:18px 25px;
+    margin-bottom:15px;
+    border-left:8px solid #4CAF50;
+    border-radius:8px;
+    box-shadow:0 3px 8px rgba(0,0,0,.08);
+}
+
+/* ==========================
+   アクセス
+========================== */
+
+.map{
+    background:#ddd;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:15px;
+    font-size:26px;
+    margin-bottom:20px;
+}
+
+.access p{
+    text-align:center;
+}
+
+/* ==========================
+   お問い合わせ
+========================== */
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+
+
+//*==========================
+設備紹介
+==========================*/
+
+
+
+.facility2-box{
+    display:flex;
+    align-items:center;
+    gap:50px;
+    margin:60px 0;
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+
+.facility2-box.reverse{
+    flex-direction:row-reverse;
+}
+
+.facility2-text{
+    flex:1;
+}
+.facility2-box img{
+    width:350px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    flex-shrink:0;
+    display:block;
+}
+
+
+.facility2-text{
+    flex:1;
+}
+
+.facility2-text h3{
+    color:#333;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.facility2-text p{
+    margin-bottom:15px;
+    line-height:2;
+    font-size:18px;
+}
+
+.car-img{
+    width:350px !important;
+    height:auto !important;
+    max-height:260px;
+    object-fit:contain;
+    border-radius:20px;
+    background:#fff;
+}
+
+.facility2-box.reverse{
+    flex-direction:row-reverse;
+}
+
+/* ==========================
+   フッター
+========================== */
+
+footer{
+    Background:#ffe8dc;
+    color:#92cb97;
+    text-align:center;
+    padding:25px;
+    margin-top:80px;
+}
+.service-content img{
+    width:100px;
+    height:auto;
+    display:block;
+    margin:0 auto 20px;
+}
+/* ==========================
+施設内のご紹介
+========================== */
+
+.facility2-space{
+    text-align:center;
+    max-width:900px;
+    margin:70px auto;
+}
+
+.facility2-space img{
+    width:80%;
+    max-width:700px;
+    height:auto;
+    display:block;
+    margin:30px auto;
+    object-fit:cover;
+    border-radius:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.facility2-space h3{
+    margin-top:20px;
+    color:#2E7D32;
+}
+
+.facility2-space p{
+    max-width:750px;
+    margin:15px auto;
+    line-height:2;
+}
+/* ==========================
+スタッフ紹介
+========================== */
+
+.staff{
+    text-align:center;
+    max-width:900px;
+    margin:70px auto;
+}
+
+.staff img{
+    width:350px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+    margin:30px auto;
+}
+
+.staff h2{
+    font-size:38px;
+    color:#2E7D32;
+    font-family:"Hiragino Maru Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+.staff h3{
+    font-size:26px;
+    color:#6FAF7B;       /* やわらかい緑色 */
+    font-family:"Hiragino Maru Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+    font-weight:600;
+    margin:20px 0;
+    letter-spacing:1px;
+}
+
+.staff p{
+    max-width:750px;
+    margin:15px auto;
+    line-height:2;
+}
+
+//*==========================
+サービス紹介
+==========================*/
+
+.about{
+    text-align:center;
+    padding:60px 40px;
+}
+
+.about h2{
+    color:#2E7D32;
+    margin-bottom:30px;
+}
+
+.about p{
+    max-width:850px;
+    margin:20px auto;
+    font-size:18px;
+    line-height:2;
+}
+
+.about-box{
+    width:100%;
+    max-width:1000px;
+    margin:60px auto;
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.about-box.reverse{
+    flex-direction:row-reverse;
+}
+
+.about-text{
+    flex:1;
+}
+.about-box img{
+    width:350px;
+    height:260px;
+    object-fit:cover;
+    border-radius:20px;
+    flex-shrink:0;
+    display:block;
+}
+
+
+.about-text{
+    flex:1;
+}
+
+.about-text h3{
+    color:#333;
+    margin-bottom:20px;
+    font-size:20px;
+}
+
+.about-text p{
+    margin-bottom:15px;
+    line-height:2;
+    font-size:18px;
+}
+
+
+.about-box.reverse{
+    flex-direction:row-reverse;
+}
+.image-row{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:25px 0;
+}
+
+.image-row img{
+    width:280px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+}
+/* ==========================
+サービス紹介
+========================== */
+
+.about-box{
+    background:#fff;
+    margin:60px auto;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.about-text,
+.about-card{
+    text-align:center;
+}
+
+.about-text img,
+.about-card img{
+    width:30%;
+    max-width:280px;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    margin:10px;
+    display:inline-block;
+}
+
+/* ==========================
+   スマホ対応
+========================== */
+
+@media (max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+    margin-top:15px;
+}
+
+nav li{
+    margin:10px 0;
+}
+
+.hero img{
+    height:300px;
+}
+
+.hero-text{
+    position:static;
+    transform:none;
+    margin:20px;
+}
+
+.hero-text h2{
+    font-size:28px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+.gallery-box{
+    grid-template-columns:1fr;
+}
+
+section h2{
+    font-size:28px;
+}
+
+
+.facility2-box{
+    flex-direction:column;
+    text-align:center;
+}
+
+.facility2-box:nth-child(even){
+    flex-direction:column;
+}
+
+.facility2-box img{
+    width:100%;
+    max-width:400px;
+}
+}
+/* ==========================
+お問い合わせページ
+========================== */
+
+.contact-page{
+    max-width:800px;
+    margin:80px auto;
+    text-align:center;
+}
+
+.contact-page h2{
+    color:#2E7D32;
+    font-size:36px;
+    margin-bottom:30px;
+}
+
+.contact-page p{
+    font-size:18px;
+    line-height:2;
+}
+
+.tel-box{
+    background:#fff;
+    margin:40px auto;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.tel-box h3{
+    color:#5A4635;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.tel-number{
+    font-size:42px;
+    font-weight:bold;
+    color:#2E7D32;
+    margin:20px 0;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
+}
