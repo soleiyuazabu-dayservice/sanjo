@@ -696,6 +696,42 @@ footer{
     margin:20px 0;
 }
 
+/* スマホで設備紹介を縦並びにする */
+@media (max-width:768px){
+
+    .facility2-box,
+    .facility2-box.reverse{
+        display:block !important;
+    }
+
+    .facility2-box img,
+    .facility2-box.reverse img{
+        display:block;
+        width:100%;
+        max-width:400px;
+        height:auto;
+        margin:0 auto 20px;
+    }
+
+    .facility2-text{
+        display:block;
+        width:100% !important;
+        max-width:100% !important;
+        margin:0 auto;
+    }
+
+    .facility2-text h3{
+        text-align:center;
+    }
+
+    .facility2-text p{
+        width:100%;
+        text-align:left;
+        word-break:normal;
+        writing-mode:horizontal-tb;
+    }
+}
+
 img {
     user-select: none;
     -webkit-user-drag: none;
