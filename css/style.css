@@ -591,20 +591,39 @@ section h2{
     font-size:28px;
 }
 
-/* 施設紹介 */
-.facility2-box{
-    flex-direction:column;
+/* 設備紹介（スマホ） */
+.facility2-box,
+.facility2-box.reverse{
+    display:flex;
+    flex-direction:column !important;
+    align-items:center;
+    text-align:center;
+    gap:20px;
+}
+
+.facility2-box img,
+.facility2-box.reverse img{
+    width:100%;
+    max-width:400px;
+    height:auto;
+}
+
+.facility2-text{
+    width:100%;
+}
+
+.facility2-text h3{
+    margin-top:10px;
+    margin-bottom:15px;
     text-align:center;
 }
 
-.facility2-box:nth-child(even){
-    flex-direction:column;
+.facility2-text p{
+    text-align:left;
+    line-height:2;
+    font-size:16px;
 }
 
-.facility2-box img{
-    width:100%;
-    max-width:400px;
-}
 
 /* スタッフ写真 */
 .staff img{
